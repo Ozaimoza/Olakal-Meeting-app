@@ -90,7 +90,7 @@ const MeetingTypeList = () => {
         handleClick={() => {
           setMeetingState("isInstantMeeting");
         }}
-        className="bg-orange-600"
+        className="bg-orange-600 hover:scale-110 hover:duration-300"
       />
       <HomeCard
         img="/icons/schedule.svg"
@@ -99,7 +99,7 @@ const MeetingTypeList = () => {
         handleClick={() => {
           setMeetingState("isScheduleMeeting");
         }}
-        className="bg-blue-600"
+        className="bg-blue-600 hover:scale-110 hover:duration-300"
       />
       <HomeCard
         img="/icons/recordings.svg"
@@ -108,7 +108,7 @@ const MeetingTypeList = () => {
         handleClick={() => {
           router.push("/recordings");
         }}
-        className="bg-purple-600"
+        className="bg-purple-600 hover:scale-110 hover:duration-300"
       />
       <HomeCard
         img="/icons/join-meeting.svg"
@@ -117,7 +117,7 @@ const MeetingTypeList = () => {
         handleClick={() => {
           setMeetingState("isJoiningMeeting");
         }}
-        className="bg-yellow-400"
+        className="bg-yellow-400 hover:scale-110 hover:duration-300"
       />
 
       {!callDetails ? (
